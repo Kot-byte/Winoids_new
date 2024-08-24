@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Winoids | Windows Driver Updater ">
+    <meta name="description"
+        content="Optimize your PC with Winoids - the powerful driver updater for Windows. Enjoy seamless performance, enhanced security, and easy updates for over 500,000 certified drivers.">
+    <meta name="keywords"
+        content="driver updater, Winoids, Windows drivers, PC optimization, driver fixer, Windows 11, Windows 10, update drivers, computer maintenance, system security, certified drivers, enhance PC performance, driver update software.">
+    <link rel="icon" type="assets/image/svg+xml" sizes="32x32" href="assets/image/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Winoids | Windows Driver Updater</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo" data-aos="fade-right">
+                <a href="../index.html">
+                    <img src="assets/image/logo.png" alt="logo" class="header-logo"> 
+                </a>
+            </div>
+
+            <nav class="d-none d-lg-block custom-nav" data-aos="fade-down">
+                <ul class="nav custom-nav-list">
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="printer-drivers.html">Printer Drivers</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="driver-fixer.html">Driver Fixer</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="support.html">Support</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn btn-primary custom-btn-blue d-none d-lg-block " data-aos="zoom-in">Buy Now</button>
+
+            <button class="btn d-lg-none" id="mobileMenuButton">
+                <img src="assets/image/burger.svg" alt="burger">
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="container d-flex justify-content-between align-items-center" data-aos="fade-down"
+            style="padding-bottom: 15px;">
+            <div class="container d-flex justify-content-start align-items-center">
+                <div class="logo mb-0 me-3">
+                    <img src="assets/image/service.svg" alt="service" class="img-fluid">
+                </div>
+                <div class="d-flex align-items-center media-text12">
+                    <p class="text16 mb-0 me-3">Services</p>
+                    <div class="logo mb-0 me-3">
+                        <img src="assets/image/Line.svg" alt="line" class="img-fluid">
+                    </div>
+                    <p class="text16 mb-0 me-4">Driver Update</p>
+                    <p class="text16 mb-0 me-4">Safety</p>
+                    <p class="text16 mb-0">Support</p>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex justify-content-end align-items-center" data-aos="fade-left">
+                <a class="logo mb-0 me-2" href="#">
+                    <img src="assets/image/telegram.svg" alt="telegram" class="img-fluid icon-small">
+                </a>
+                <a class="logo mb-0" href="#">
+                    <img src="assets/image/whatsapp.svg" alt="whatsapp" class="img-fluid icon-small">
+                </a>
+            </div>
+        </div>
+
+        <div id="sideMenu" class="side-menu" style="z-index: 1001;">
+            <a href="javascript:void(0);" class="close-btn" id="closeSideMenu">&times;</a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="printer-drivers.html">Printer Drivers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="driver-fixer.html">Driver Fixer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+
+                <li class="nav-item d-flex justify-content-center mt-3">
+                    <a href="#" class="me-3">
+                        <img src="assets/image/telegram.svg" alt="telegram" class="img-fluid icon-small">
+                    </a>
+                    <a href="#">
+                        <img src="assets/image/whatsapp.svg" alt="whatsapp" class="img-fluid icon-small">
+                    </a>
+                </li>
+                <li class="nav-item text-center mt-3">
+                    <button class="btn btn-primary custom-btn-blue">Buy Now</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- printer-drivers -->
+
+        <section class="priner-drivers mt-5 d-flex">
+            <div class="container">
+                <div class="row justify-content-between align-items-center priner-drivers-left">
+                    <!-- Левые колонки -->
+                    <div class="image-container-printer">
+                        <img src="assets/image/printer/Ellipse.png" alt="Ellipse">
+                    </div>
+                    <div class="col-12 col-md-7 column-left mb-4 mb-md-0" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <h1 class="instant-title title">Printer <span class="span-dark"><strong>Acting
+                                    Up?</strong></span> </h1>
+                        <p class="text30 mt-4 desc-printer"> Let Us Get You Printing Again!</p>
+                        <p class="text18 mt-4">Update Your Printer Drivers in a Snap with Winoids</p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-primary printer-btn btn-up mt-5">Download for free <i
+                                    class="bi bi-download"></i></button>
+                            <p class="mt-2 text12">By clicking “Download”, I agree to Site
+                                <span class="span-dark"> Terms of Use </span>
+                                and <span class="span-dark">Privacy Policy</span> <br>
+                                Compatible OS: Windows 11/10/8.1/8/7
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 column-left mb-4 mb-md-0">
+                        <div data-aos="fade-left" data-aos-duration="1000">
+                            <img src="assets/image/printer/printer.svg" alt="printer" class="img-fluid">
+                        </div>
+                        <div class="row custom-row" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="d-flex justify-content-end mt-2 custom-p-description">
+                                <div class="d-flex flex-column align-items-center custom-k" data-aos="zoom-in"
+                                    data-aos-duration="1000">
+                                    <p class="text35 span-dark">500K+</p>
+                                    <p class="description-text span-dark">Drivers Available</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center custom-k" data-aos="zoom-in"
+                                    data-aos-duration="1000">
+                                    <p class="text35 span-dark">10K+</p>
+                                    <p class="description-text span-dark">Daily Installs</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center custom-k" data-aos="zoom-in"
+                                    data-aos-duration="1000">
+                                    <p class="text35 mt-0 span-dark span-dark">24/7</p>
+                                    <p class="description-text span-dark">Support</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center custom-k" data-aos="zoom-in"
+                                    data-aos-duration="1000">
+                                    <p class="text35 mt-0 span-dark">100%</p>
+                                    <p class="description-text span-dark">Efficiency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- update-printer -->
+        <section class="update-printer text-left mt-5">
+            <div class="container">
+                <!-- Заголовок -->
+                <div class="row">
+                    <div class="col-12" data-aos="fade-down" data-aos-duration="1000">
+                        <h2 class="title mb-3">Update Your <span class="highlight text-with-white-stroke"><strong>Printer
+                                    Drivers</strong></span> Hassle-Free</h2>
+                        <p class="text25 mb-5 ">Keep your printer up-to-date with the latest drivers and features.</p>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <!-- Первая колонка -->
+                        <div class="col-md-2 column d-flex flex-column align-items-center text-center"
+                            data-aos="flip-left" data-aos-delay="200" data-aos-duration="800">
+                            <h4 class="mb-3">Canon Drivers</h4>
+                            <img src="assets/image/printer/canon.svg" alt="Canon Drivers" class="mb-3"
+                                data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+                            <a href="#canon" class="show-more-link" data-aos="fade-up" data-aos-delay="600"
+                                data-aos-duration="800">Show more</a>
+                        </div>
+
+                        <!-- Вторая колонка -->
+                        <div class="col-md-2 column d-flex flex-column align-items-center text-center"
+                            data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
+                            <h4 class="mb-3">HP Drivers</h4>
+                            <img src="assets/image/printer/hp.svg" alt="HP Drivers" class="mb-3"
+                                data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                            <a href="#HP" class="show-more-link" data-aos="fade-up" data-aos-delay="700"
+                                data-aos-duration="800">Show more</a>
+                        </div>
+
+                        <!-- Третья колонка -->
+                        <div class="col-md-2 column d-flex flex-column align-items-center text-center"
+                            data-aos="flip-left" data-aos-delay="400" data-aos-duration="800">
+                            <h4 class="mb-3">Epson Drivers</h4>
+                            <img src="assets/image/printer/epson.svg" alt="Epson Drivers" class="mb-3"
+                                data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800">
+                            <a href="#epson" class="show-more-link" data-aos="fade-up" data-aos-delay="800"
+                                data-aos-duration="800">Show more</a>
+                        </div>
+
+                        <!-- Четвертая колонка -->
+                        <div class="col-md-2 column d-flex flex-column align-items-center text-center"
+                            data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                            <h4 class="mb-3">Brother Drivers</h4>
+                            <img src="assets/image/printer/brother.svg" alt="Brother Drivers" class="mb-3"
+                                data-aos="zoom-in" data-aos-delay="700" data-aos-duration="800">
+                            <a href="#brother" class="show-more-link" data-aos="fade-up" data-aos-delay="900"
+                                data-aos-duration="800">Show more</a>
+                        </div>
+
+                        <!-- Пятая колонка -->
+                        <div class="col-md-2 column d-flex flex-column align-items-center text-center"
+                            data-aos="flip-left" data-aos-delay="700" data-aos-duration="800">
+                            <h4 class="mb-3">Lexmark Drivers</h4>
+                            <img src="assets/image/printer/lexmark.png" alt="Lexmark Drivers" class="mb-3"
+                                data-aos="zoom-in" data-aos-delay="800" data-aos-duration="800">
+                            <a href="#lexmark" class="show-more-link" data-aos="fade-up" data-aos-delay="1000"
+                                data-aos-duration="800">Show more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Изображение внизу -->
+                <div class="row mt-5">
+                    <p class="text18" data-aos="fade-up" data-aos-duration="1000">Winoids Printer Driver Fixer is an independent software service provider dedicated to enhancing your printing experience. Our tool helps identify and update outdated or missing printer drivers. Please check our Privacy Policy page for detailed policies. By downloading, you agree to our Privacy Policy and Terms and Conditions. Any mentioned names and trademarks are used for reference purposes only, with no implied affiliation to any third-party companies.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- section blog-printer -->
+        <section class="blog-printer">
+            <div class="container">
+                <div class="row">
+
+                    <div id="canon" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center my-4"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="blog-printer-card d-flex flex-column align-items-center text-start w-100">
+                            <div class="position-relative img-container d-flex justify-content-center">
+                                <img src="assets/image/printer/canon.svg" alt="canon" class="img-fluid blog-printer-img">
+                            </div>
+                            <div class="border-blog p-4">
+                                <h3 class="text">Canon Drivers for Windows 7, Windows 8, Windows 10 : Install Updates.</h3>
+                            </div>
+                            <p class="mt-3 text18 text-grey-blog">CANON offers a wide range of Printers like Laser/InkJet/Ink Tank/Image Class/Selphy etc., which are commonly used for Home/Home Office/Small Business/Large Business Houses/Industries etc. Few operational issues might effect the productivity and the few common issues are - Canon Printer Offline/New Installation or problem while Scanning Documents? High possibility for these problems are generally related to the software part i,e. The Driver. It is always recommended to update your Canon Drivers regularly in order to keep the devices run smoothly & fluently. Updating Drivers are required for all Canon Printers.</p>
+                            <p class="mt-3 text-muted text-grey-blog">Please Note: By downloading the latest Driver helps resolving any conflicts and improve your device’s performance and stability. Updates are recommended for Windows 7, Windows 8 and Windows 10 users.</p>
+                        </div>
+                    </div>
+
+                    <div id="HP" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center my-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="blog-printer-card d-flex flex-column align-items-center text-start w-100">
+                            <div class="position-relative img-container d-flex justify-content-center">
+                                <img src="assets/image/printer/hp.svg" alt="hp" class="img-fluid blog-printer-img">
+                            </div>
+                            <div class="border-blog p-4">
+                                <h3 class="text">HP Drivers For Windows 7, Windows 8, Windows 10, Windows 11 : Install Update</h3>
+                            </div>
+                            <p class="mt-3 text18 text-grey-blog">HP offers a wide range of Printers like LaserJet/InkJet/DeskJet/Page Wide Series/Enterprise Models for Home Use/Small Offices/Business Houses/Industries etc. Few operational issues might effect the productivity and the common issues are - HP Printer Offline/New Installation or problem while Scanning Documents? High possibility for these problems are generally related to the software part i,e. the Driver. It is always recommended to update your HP Drivers regularly in order to keep the devices run smoothly & fluently. Updating Drivers are required for all HP Printers, Laptops/Desktops and other devices.</p>
+                            <p class="mt-3 text-muted text-grey-blog">Please Note: Downloading the latest Driver helps resolving any conflicts and improve your device’s performance and stability. Updates are recommended for Windows 7, Windows 8, Windows 10, and Windows 11 users.</p>
+                        </div>
+                    </div>
+
+                    <div id="epson" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center my-4"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="blog-printer-card d-flex flex-column align-items-center text-start w-100">
+                            <div class="position-relative img-container d-flex justify-content-center">
+                                <img src="assets/image/printer/epson.svg" alt="epson" class="img-fluid blog-printer-img">
+                            </div>
+                            <div class="border-blog p-4">
+                                <h3 class="text">Epson Drivers for Windows 7, Windows 8, Windows 10 : Install Updates</h3>
+                            </div>
+                            <p class="mt-3 text18 text-grey-blog">EPSON offers a wide range of Printers like Inktank/WorkForce/Photo Printers/Large Format Printers which are commonly used for Home/Small Offices/Business Houses/Industries etc. Few operational issues might effect the productivity and the few common issues are - EPSON Printer Offline/New Installation or problem while Scanning Documents? High possibility for these problems are generally related to the software part i,e. The Driver. It is always recommended to update your EPSON Drivers regularly in order to keep the devices run smoothly & fluently. Updating Drivers are required for all EPSON Printers.</p>
+                            <p class="mt-3 text-muted text-grey-blog">Please Note: Downloading the latest Driver helps resolving any conflicts and improve your device’s performance and stability. Updates are recommended for Windows 7, Windows 8, Windows 10, and Windows 11 users.</p>
+                        </div>
+                    </div>
+
+                    <div id="brother" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center my-4"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="blog-printer-card d-flex flex-column align-items-center text-start w-100">
+                            <div class="position-relative img-container d-flex justify-content-center">
+                                <img src="assets/image/printer/brother-big.png" alt="brother" class="img-fluid blog-printer-img">
+                            </div>
+                            <div class="border-blog p-4">
+                                <h3 class="text">Brother Drivers for Windows 7, Windows 8, Windows 10 : Install Updates</h3>
+                            </div>
+                            <p class="mt-3 text18 text-grey-blog">BROTHER offers a wide range of Printers like Laser/InkJet/All in 1/Laser Duplex etc., which are commonly used for Home/Home Office/Small Business/Large Business Houses/Industries etc. Few operational issues might effect the productivity and the few common issues are - Brother Printer Offline/New Installation or problem while Scanning Documents? High possibility for these problems are generally related to the software part i,e. The Driver. It is always recommended to update your BROTHER Drivers regularly in order to keep the devices run smoothly & fluently. Updating Drivers are required for all BROTHER Printers.</p>
+                            <p class="mt-3 text-muted text-grey-blog">Please Note: By downloading the latest Driver helps resolving any conflicts and improve your device’s performance and stability. Updates are recommended for Windows 7, Windows 8 and Windows 10 users.</p>
+                        </div>
+                    </div>
+
+                    <div id="lexmark" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center my-4"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="blog-printer-card d-flex flex-column align-items-center text-start w-100">
+                            <div class="position-relative img-container d-flex justify-content-center">
+                                <img src="assets/image/printer/lexmar-big.png" alt="lexmark" class="img-fluid">
+                            </div>
+                            <div class="border-blog p-4">
+                                <h3 class="text">Lexmark Drivers for Windows 7, Windows 8, Windows 10 : Install Updates</h3>
+                            </div>
+                            <p class="mt-3 text18 text-grey-blog">Lexmark offers a wide range of Printers like Laser/InkJet/All in 1/Laser Duplex etc., which are commonly used for Home/Home Office/Small Business/Large Business Houses/Industries etc. Few operational issues might effect the productivity and the few common issues are - Lexmark Printer Offline/New Installation or problem while Scanning Documents? High possibility for these problems are generally related to the software part i,e. The Driver. It is always recommended to update your Lexmark Drivers regularly in order to keep the devices run smoothly & fluently. Updating Drivers are required for all Lexmark Printers.</p>
+                            <p class="mt-3 text-muted text-grey-blog">Please Note: By downloading the latest Driver helps resolving any conflicts and improve your device’s performance and stability. Updates are recommended for Windows 7, Windows 8 and Windows 10 users.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Free now -->
+        <section class="blog-more info text-left">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 column-left mb-4 mb-md-0" data-aos="fade-right">
+                        <img src="assets/image/books.png" alt="books-winoids" class="img-fluid filter"
+                            data-aos="zoom-in">
+                    </div>
+
+                    <div class="col-12 col-md-6 now-start-text" data-aos="fade-left">
+                        <p class="text25 mt-3" style="color: black; font-weight: 600;" data-aos="fade-up"
+                            data-aos-delay="100">
+                            Update Drivers for Peak PC Performance with Winoids
+                        </p>
+                        <h2 class="title" style="color:#0C5ADB" data-aos="fade-up" data-aos-delay="200">
+                            Start Your Free Trial Now!
+                        </h2>
+                        <p class="text25 mt-3" data-aos="fade-up" data-aos-delay="300">
+                            Must-have and best-in-class driver updater
+                        </p>
+                        <button type="button" class="btn btn-primary winoids-btn btn-up mt-5" data-aos="zoom-in"
+                            data-aos-delay="400">
+                            Download for free
+                        </button>
+                        <p class="mt-2 text12" data-aos="fade-up" data-aos-delay="500">
+                            By clicking “Download”, I agree to Site
+                            <span class="highlight"> Terms of Use </span>
+                            and <span class="highlight">Privacy Policy</span> <br>
+                            Compatible OS: Windows 11/10/8.1/8/7
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Driver Fixer Section -->
+        <section class="driver-fixer text-left">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 now-start-text" data-aos="fade-left" data-aos-duration="1000">
+                        <h2 class="title mt-3" data-aos="fade-up" data-aos-duration="1000">Winoids Driver Fixer</h2>
+                        <p class="text25 mt-3 driver-desc" data-aos="fade-up" data-aos-delay="300"
+                            data-aos-duration="1000">Keep your PC in tip-top shape</p>
+                        <p class="text25 mt-3 driver-desc" data-aos="fade-up" data-aos-delay="600"
+                            data-aos-duration="1000">Improved, sharper graphics</p>
+                        <p class="text25 mt-3 driver-desc" data-aos="fade-up" data-aos-delay="900"
+                            data-aos-duration="1000">Clearer and richer sound</p>
+
+                        <button type="button" class="btn btn-primary winoids-btn btn-up mt-5" data-aos="pulse"
+                            data-aos-duration="1000">Download for free <i class="bi bi-download"></i></button>
+                    </div>
+
+                    <div class="col-12 col-md-6 column-left mb-4 mb-md-0" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <img src="assets/image/person-vector.svg" alt="laptop-winoids" class="img-fluid"
+                            data-aos="zoom-in" data-aos-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments">
+            <div class="container mt-5 text-center">
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="text18 mt-3" style="color:#0C5ADB">550 000+ Happy Landingfolio Users</p>
+                        <h2 class="title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Our
+                            Satisfied
+                            Customers</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="container mt-4">
+                        <div class="row">
+                            <!-- First Card Row -->
+                            <div class="col-md-6 mb-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <div class="card h-100">
+                                    <div class="row g-0">
+                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/girl.jpg" alt="User Jenny"
+                                                class="img-fluid rounded-end" data-aos="zoom-in"
+                                                data-aos-duration="1000">
+                                        </div>
+                                        <div class="col-8 p-3 d-flex flex-column text-start ps-4">
+                                            <div class="mb-3">
+                                                <img src="assets/image/stars.svg" alt="stars">
+                                            </div>
+                                            <p class="mb-3">“The unique scan technology and the massive driver
+                                                database
+                                                are a winning combination. Thanks for making my device run smoother
+                                                than
+                                                ever before.”</p>
+                                            <p class="text mb-0">Alice <span class="text-muted">Canada</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <div class="card h-100">
+                                    <div class="row g-0">
+                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/foto-men.jpg" alt="User John"
+                                                class="img-fluid rounded-end" data-aos="zoom-in"
+                                                data-aos-duration="1000">
+                                        </div>
+                                        <div class="col-8 p-3 d-flex flex-column text-start ps-4">
+                                            <div class="mb-3">
+                                                <img src="assets/image/stars.svg" alt="stars">
+                                            </div>
+                                            <p class="mb-3">“Winoids has made updating my Windows drivers a painless
+                                                experience. The intuitive interface and rapid updates keep my system
+                                                running smoothly. Highly satisfied!”</p>
+                                            <p class="text mb-0">John <span class="text-muted">UK</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Second Card Row -->
+                            <div class="col-md-6 mb-5" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                                <div class="card h-100">
+                                    <div class="row g-0">
+                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/Jenny-img.png" alt="User Alice"
+                                                class="img-fluid rounded-end" data-aos="zoom-in"
+                                                data-aos-duration="1000">
+                                        </div>
+                                        <div class="col-8 p-3 d-flex flex-column text-start ps-4">
+                                            <div class="mb-3">
+                                                <img src="assets/image/stars.svg" alt="stars">
+                                            </div>
+                                            <p class="mb-3">"I was amazed by how quickly the software identified and
+                                                fixed outdated drivers. My computer feels brand new again—highly
+                                                recommended!”</p>
+                                            <p class="text mb-0">Maria <span class="text-muted">USA</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5" data-aos="fade-up" data-aos-delay="1200"
+                                data-aos-duration="1000">
+                                <div class="card h-100">
+                                    <div class="row g-0">
+                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/henry-img.png" alt="User Bob"
+                                                class="img-fluid rounded-end" data-aos="zoom-in"
+                                                data-aos-duration="1000">
+                                        </div>
+                                        <div class="col-8 p-3 d-flex flex-column text-start ps-4">
+                                            <div class="mb-3">
+                                                <img src="assets/image/stars.svg" alt="stars">
+                                            </div>
+                                            <p class="mb-3">“The intuitive interface and quick updates have
+                                                drastically
+                                                improved my PC's performance. I can’t imagine going back to the old
+                                                way
+                                                of doing things!”</p>
+                                            <p class="text mb-0">Bob <span class="text-muted">USA</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+
+    <footer class="footer">
+        <div class="container1920 products">
+            <div class="container">
+                <div class="row justify-content-center py-2">
+                    <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="text-center-custom">
+                            All third party products, brands or trademarks listed above are the sole property of their
+                            respective owner. No affiliation or endorsement is intended or implied.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container box-email mt-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="p-4 bg-primary text-white d-flex align-items-center justify-content-between rounded">
+                        <!-- Текст слева -->
+                        <div class="text-start">
+                            <p class="mb-0 text18">Newsletter</p>
+                            <p class="mb-0">Be the first one to know about discounts, offers and events</p>
+                        </div>
+                        <!-- Поле для ввода email с иконками -->
+                        <div class="text-field">
+                            <div class="text-field__icon text-field__icon_email">
+                                <input class="text-field__input" type="email" placeholder="Enter your email">
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-logo" style="margin-bottom: 60px;" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <!-- Логотип и текст в одном столбце -->
+                    <div class="d-flex flex-column align-items-start">
+                        <!-- Логотип -->
+                        <div class="mb-4">
+                            <img src="assets/image/logo.png" alt="Logo" style="width: 156px; height: 28px;">
+                        </div>
+                        <!-- Текст -->
+                        <p class="text-muted mb-0">
+                            Trust Winoids Driver Fixer to keep your system running smoothly and efficiently. Our
+                            team is committed to delivering software that ensures your PC always stays secure,
+                            stable, and efficient.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container nav-footer" style="margin-bottom: 80px;">
+            <div class="row">
+                <!-- Колонка 1 -->
+                <div class="col-md-3 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="footer-item">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="assets/image/tel.svg" alt="tel">
+                            <div class="ms-3">
+                                <p class="text-muted mb-1">Tel</p>
+                                <p class="text-primary mb-0">310-437-2766</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="assets/image/email.svg" alt="email">
+                            <div class="ms-3">
+                                <p class="text-muted mb-1">Mail</p>
+                                <p class="text-primary mb-0">support@winoids.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/address.svg" alt="address">
+                            <div class="ms-3">
+                                <p class="text-muted mb-1">Address</p>
+                                <p class="text-primary mb-0">229 Raindollar Ave #H Marina CA 93933</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Колонка 2 -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="text16 mb-4 font-weight-bold">Important Links</p>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Driver Fixer</a></li>
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Support</a></li>
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Buy Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3 -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="text16 mb-4 font-weight-bold">FAQ</p>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">Refund Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text12 text-decoration-none">EULA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 4 -->
+                <div class="col-md-3 d-flex align-items-end justify-content-center mb-4" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <img src="assets/image/sectigo.svg" alt="sectigo">
+                </div>
+            </div>
+
+            <hr style="margin-top: 60px;">
+
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center text-center flex-wrap">
+                    <img src="assets/image/pay.png" alt="cards Icon">
+                    <p class="mb-0">All Rights Reserved</p>
+                    <img src="assets/image/social.svg" alt="social-media">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
