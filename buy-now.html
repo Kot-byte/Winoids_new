@@ -32,7 +32,7 @@
             <nav class="d-none d-lg-block custom-nav" data-aos="fade-down">
                 <ul class="nav custom-nav-list">
                     <li class="nav-item custom-nav-item">
-                        <a class="nav-link custom-nav-link" href="../index.html">Home</a>
+                        <a class="nav-link custom-nav-link active" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item custom-nav-item">
                         <a class="nav-link custom-nav-link" href="about.html">About Us</a>
@@ -48,10 +48,10 @@
                     </li>
                 </ul>
             </nav>
-
-            <a href="buy-now.html">
+            <a class="custom-nav-link" href="buy-now.html">
                 <button class="btn btn-primary custom-btn-blue d-none d-lg-block" data-aos="zoom-in">Buy Now</button>
             </a>
+
             <button class="btn d-lg-none" id="mobileMenuButton">
                 <img src="assets/image/burger.svg" alt="burger">
             </button>
@@ -122,147 +122,87 @@
     </header>
 
     <main>
-        <section class="support-section mt-5 d-flex">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <!-- Левая колонка: Заголовок, текст и кнопка -->
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <h1 class="winoids-title title text-with-white-stroke pt-4">
-                            How can we help you today? <br>
-                            <span class="highlight"> <strong>
-                                    24×7 Support
-                                </strong></span>
-                        </h1>
-                        <p class="text18 support-icon m-4">Live Chat Support</p>
-                        <p class="text18 support-icon m-4">Email Support</p>
-                        <p class="text18 support-icon m-4">Form-Based Support</p>
 
-
-
-                    </div>
-                    <!-- Правая колонка: Картинка -->
-                    <div class="col-12 col-md-5 column-left mb-4 mb-md-0">
-                        <div data-aos="fade-left" data-aos-duration="1000">
-                            <img src="assets/image/support/support.jpg" alt="background"
-                                class="img-fluid">
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="faq-section">
+        <!-- buy now -->
+        <section class="blog-buy info text-left">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 column-left mb-4 mb-md-0" data-aos="fade-right">
-                        <div class="form-container" data-aos="fade-up">
-                            <h2 class="text-center">Submit Query</h2>
-                            <form>
-                                <div class="mb-3" data-aos="fade-right">
-                                    <label for="fullName" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="fullName"
-                                        placeholder="Enter your full name">
-                                </div>
-                                <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
-                                    <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3" data-aos="fade-right" data-aos-delay="200">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-                                </div>
-                                <div class="mb-3" data-aos="fade-left" data-aos-delay="300">
-                                    <label for="query" class="form-label">Your Question</label>
-                                    <textarea class="form-control" id="query" rows="5"
-                                        placeholder="Enter your question"></textarea>
-                                </div>
-                                <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </form>
-                        </div>
+                        <img src="assets/image/buy now.png" alt="books-winoids" class="img-fluid filter"
+                            data-aos="zoom-in">
                     </div>
 
-
                     <div class="col-12 col-md-6 now-start-text" data-aos="fade-left">
-                        <div class="row">
-                            <div class="col-md-12 text-center mb-4">
-                                <h2 class="section-title" data-aos="fade-up">FAQs</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="accordion" id="faqAccordion">
-                                    <!-- FAQ Item 1 -->
-                                    <div class="card open" data-aos="fade-up" data-aos-delay="300">
-                                        <div class="card-header" id="faqHeading1">
-                                            <span class="text18">How Do I Know If My PC Drivers Need an Update?</span>
-                                            <span class="faq-icon plus">+</span>
-                                            <span class="faq-icon check">x</span>
-                                        </div>
-                                        <div id="faqCollapse1" class="card-body">
-                                            Winoids allow you to conduct regular scans. You can choose a schedule that
-                                            suits you – daily, weekly, or monthly – and ensure your PC's drivers stay
-                                            updated with ease.
-                                        </div>
-                                    </div>
-                                    <!-- FAQ Item 2 -->
-                                    <div class="card" data-aos="fade-up" data-aos-delay="400">
-                                        <div class="card-header" id="faqHeading2">
-                                            <span class="text18">Why Should I Update My PC Drivers? </span>
-                                            <span class="faq-icon plus">+</span>
-                                            <span class="faq-icon check">x</span>
-                                        </div>
-                                        <div id="faqCollapse2" class="card-body">
-                                            Updating your PC drivers is important as they act as software that allows
-                                            you to control and oversee different hardware components in your computer.
-                                            When these drivers become outdated, it can lead to various hardware-related
-                                            problems and cause frequent glitches and crashes. Therefore, maintaining
-                                            up-to-date PC drivers is vital to prevent any such issues.
-                                        </div>
-                                    </div>
-                                    <!-- FAQ Item 3 -->
-                                    <div class="card" data-aos="fade-up" data-aos-delay="500">
-                                        <div class="card-header" id="faqHeading3">
-                                            <span class="text18">Do I Need to Update Every Driver Shown as Missing or
-                                                Outdated? </span>
-                                            <span class="faq-icon plus">+</span>
-                                            <span class="faq-icon check">x</span>
-                                        </div>
-                                        <div id="faqCollapse3" class="card-body">
-                                            Winoids show each device requiring an update separately. This gives you the
-                                            authority to select the drivers you want to download. Typically, it's not
-                                            essential to update devices that are working perfectly, as new drivers may
-                                            introduce issues not present in the old ones. However, if you encounter
-                                            problems with a device or software connected to it, updating drivers is
-                                            usually the best solution to fix such issues.
-                                        </div>
-                                    </div>
+                        <p class="text25 mt-3" style="color: black; font-weight: 600;" data-aos="fade-up"
+                            data-aos-delay="100">
+                            Keep Your PC Drivers Boosted and Up to Date with Winoids Driver Fixer
+                        </p>
 
-                                    <div class="card" data-aos="fade-up" data-aos-delay="500">
-                                        <div class="card-header" id="faqHeading3">
-                                            <span class="text18">Can I try Winoids Driver Fixer for free?</span>
-                                            <span class="faq-icon plus">+</span>
-                                            <span class="faq-icon check">x</span>
-                                        </div>
-                                        <div id="faqCollapse3" class="card-body">
-                                            Yes! With a free trial, you can run a scan on your PC and find out all the
-                                            drivers that need an update. However, to update the latest versions of
-                                            drivers, you need to opt for the premium version. Download your free trial
-                                            now.
-                                        </div>
-                                    </div>
-                                </div>
+                        <p class="text18 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            Please complete the registration process below to bring home the world’s most tried, tested
+                            and trusted Windows Driver Fixer.
+                        </p>
+
+                        <form >
+                            <div class="mb-3" data-aos="fade-right">
+                                <label for="fullName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your name">
                             </div>
-                        </div>
+                            <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+                            </div>
+                            
+                        </form>
+
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <section class="option">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 column-left mb-4 mb-md-0" data-aos="fade-right">
+                        <p class="text18 support-icon m-4 ">Quickly Scan <br> and Update Drivers</p>
+                        <p class="text18 support-icon m-4">500K+ <br> Drivers from Major Brands</p>
+                        <p class="text18 support-icon m-4">24x7 <br> Free After-sales Support</p>
+                        <p class="text18 support-icon m-4">Regular Updates<br> for Optimal Performance</p>
+                        <p class="text18 support-icon m-4">30-Day Money Back Guarantee <br>100% Risk Free</p>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 now-start-text" data-aos="fade-left">
+                        <p class="text18  m-4" style="color: black; font-weight: 600;" data-aos="fade-up"
+                            data-aos-delay="100">
+                            Get Winoids Driver Fixer Now To:
+                        </p>
+
+                        <ul class="m-2">
+                            <li class="m-2">Get rid of outdated drivers and minimize crashes and freezes.</li>
+                            <li class="m-2">Speed up your internet experience and enjoy swift browsing and downloading.
+                            </li>
+                            <li class="m-2">Prevent common problems like slow start-ups, system hangs, and frozen
+                                applications.</li>
+                            <li class="m-2">Stay protected with the latest security patches and updates.</li>
+                            <li class="m-2">Take your multimedia experience to the next level with updated audio and
+                                graphics drivers.</li>
+                            <li class="m-2">Save time and make your PC run faster and more efficiently.</li>
+                            <li class="m-2">Enjoy a stable and reliable computing experience.</li>
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
@@ -305,7 +245,6 @@
                 </div>
             </div>
         </div>
-        
 
         <div class="container footer-logo" style="margin-bottom: 60px;" data-aos="fade-up" data-aos-duration="1000">
             <div class="row justify-content-center">
