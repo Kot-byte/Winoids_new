@@ -502,6 +502,17 @@
     border-radius: 5px;
   }
   
+  .why-win-block{
+    border-radius: 5px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+background: #fff;
+  }
+
+  .why-win-bloc img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
   /* Blog */
   .blog {
     background: url("/assets/image/blog-background.png") no-repeat center
@@ -717,6 +728,7 @@
     border: none;
     outline: none;
     width: 100%;
+    color: white;
   }
   
   .text-field__input::placeholder {
@@ -724,7 +736,11 @@
     font-size: 16px;
     padding-left: 10px;
   }
-  
+
+.submit:hover {
+  background-color: #e8e8e8;
+}
+
   .text-field__icon_email::before {
     content: "";
     width: 1rem;
@@ -844,6 +860,7 @@
       text-align: center;
       font-weight: 200;
     }
+
   
     .btn-up {
       font-size: 14px;
@@ -851,6 +868,22 @@
       width: 100%;
     }
   
+    .box-email .p-4 {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-field__input {
+      border-radius: 4px;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .submit {
+      border-radius: 4px;
+      width: 100%;
+  }
+
     .text35 {
       font-size: 24px;
     }
