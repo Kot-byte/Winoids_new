@@ -1,14 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentLocation = window.location.pathname.split('/').pop();
+
     let navLinks = document.querySelectorAll('.custom-nav-link');
+    let dropdownLinks = document.querySelectorAll('.dropdown-content a');
 
-    navLinks.forEach(function (link) {
-        let linkPath = link.getAttribute('href').split('/').pop();
-        if (linkPath === currentLocation) {
-            link.classList.add('active');
-        }
-    });
+    // Функция для сброса всех активных классов
+    function resetActiveClasses() {
+        navLinks.forEach(function (link) {
+            link.classList.remove('active');
+        });
+        dropdownLinks.forEach(function (link) {
+            link.classList.remove('active');
+        });
+    }
 
+    // Функция для установки активных классов
+    function setActiveClasses() {
+        resetActiveClasses();
+
+        // Обработка основного меню
+        navLinks.forEach(function (link) {
+            let linkPath = link.getAttribute('href').split('/').pop();
+            if (linkPath === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Обработка подменю
+        dropdownLinks.forEach(function (link) {
+            let linkPath = link.getAttribute('href').split('/').pop();
+            if (linkPath === currentLocation) {
+                link.classList.add('active');
+                // Выделяем родительский пункт меню "Products"
+                let parentLink = link.closest('.nav-item-products').querySelector('.nav-link-products');
+                if (parentLink) {
+                    parentLink.classList.add('active');
+                }
+            }
+        });
+    }
+
+    setActiveClasses();
 
 
     AOS.init({
@@ -55,9 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     ;
 
-
-    ////////////// faqs
-
     // FAQ toggle functionality
     const faqHeaders = document.querySelectorAll('.card-header');
 
@@ -79,6 +108,17 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 currentCard.classList.add('open');
             }
+        });
+    });
+
+    // menu link
+
+    let navItems = document.querySelectorAll('.nav-item-products > a');
+
+    navItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Отключаем переход по ссылке
+            this.parentElement.classList.toggle('active'); // Переключаем класс active
         });
     });
 });

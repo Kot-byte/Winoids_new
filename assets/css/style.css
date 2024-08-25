@@ -104,11 +104,6 @@
     transition: color 0.3s;
   }
   
-  .custom-nav-link.active {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
 
   .nav-item-products {
     position: relative;
@@ -133,21 +128,39 @@
 }
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 17px 16px;
     text-decoration: none;
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #c4c4c4;
 }
 .nav-item-products:hover .dropdown-content {
     display: block;
 }
 
+.nav-item-products.active .dropdown-content {
+  display: block; 
+}
+.nav-item-products:focus .dropdown-content {
+  display: block;
+}
+
   .custom-nav-link:hover {
     color: #0056b3;
   }
-  
+
+  .custom-nav-link.active {
+    color: #0056b3; 
+    font-weight: bold;
+}
+
+.dropdown-content a.active {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+
   hr {
     border: 1px solid #c5d6f2;
     width: 100%;
@@ -232,11 +245,6 @@
   }
   
   @media (max-width: 550px) {
-    .media-text12,
-    p {
-      font-size: 12px;
-    }
-  
     .header-logo {
       width: 100px;
       height: 20px;
@@ -448,8 +456,9 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px 0 rgba(143, 174, 207, 0.35);
-    width: 388px;
-    height: 258px;
+    /* width: 388px; */
+    /* height: 258px; */
+    height: auto;
     margin: 20px;
     text-align: left;
     box-sizing: border-box;
@@ -878,6 +887,29 @@ background: #fff;
       position: static;
       margin-bottom: 10px;
     }
+
+    /* menu link */
+    .nav-item-products .dropdown-content {
+      display: none; 
+  }
+  
+  .nav-item-products.active .dropdown-content {
+      display: block; 
+  }
+  
+  .nav-link-products {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .feather-chevron-down {
+      transition: transform 0.3s;
+  }
+
+  .nav-item-products.active .feather-chevron-down {
+      transform: rotate(180deg); 
+  }
   }
   
   @media (max-width: 767px) {
@@ -1021,6 +1053,7 @@ background: #fff;
       height: auto;
     }
   
+    
     .commets {
       margin-bottom: 100px;
     }
@@ -1072,7 +1105,14 @@ background: #fff;
     }
   }
   
-
+  @media (max-width: 370px) {
+    .text-service{
+      font-size: 8px;
+    }
+    .text-service-img{
+      display:none;
+    }
+  }
 
   /**********************************************  About-us CSS Start ***********************************/
 
@@ -1202,6 +1242,7 @@ background: #fff;
       align-items: center; /* Центрируем контент на малых экранах */
     }
   
+
     .why-choose-card h4 {
       text-align: center; /* Центрируем заголовки */
     }
@@ -1317,7 +1358,13 @@ background: #fff;
     .update-printer,
     .priner-drivers,
     .blog-printer {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+    }
+
+   
+    .priner-drivers
+     {
+      padding-bottom: 10px;
     }
 
     body{
@@ -1487,7 +1534,7 @@ background: white;
 
 
 @media (max-width:700px){
-  .driver-fixer-section, .product-overview, .process-section, .instant-fixer{
+  .driver-fixer-section, .product-overview, .process-section, .instant-fixer, .why-winoids{
     margin-bottom:50px;
     }
 }
@@ -1538,6 +1585,10 @@ background: white;
   .support-section, .faq-section{
     margin-bottom:50px;
     }
+.whi-winoids-block{
+  padding: 12px;
+}
+
   }
   /********************************************** Support CSS End***********************************/
 
@@ -1547,10 +1598,30 @@ background: white;
   .blog-buy{
     margin-bottom:110px;
   }
+  .custom-submit-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    font-weight: 600; 
+    padding: 10px 20px; 
+    border: none; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-submit-btn:hover {
+    background-color: #1684fa; 
+    transform: scale(1.05); 
+}
+
+.custom-submit-btn:active {
+    background-color: #004085; 
+    transform: scale(0.95); 
+}
+
 
   @media (max-width: 700px){
     .blog-buy{
-      margin-bottom:3 0px;
+      margin-bottom:0;
+      padding: 0;
     }
     .blog-more{
 margin-bottom: 50px;
