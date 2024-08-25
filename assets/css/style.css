@@ -606,6 +606,9 @@ background: #fff;
     padding: 50px 0;
   }
   
+  .blog-more-background{
+    background: url('/assets/image/Line1.svg') center center no-repeat;
+  }
   .container1920 {
     position: relative;
   }
