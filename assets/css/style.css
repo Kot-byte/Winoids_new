@@ -456,7 +456,7 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px 0 rgba(143, 174, 207, 0.35);
-    /* width: 388px; */
+    width: 388px;
     /* height: 258px; */
     height: auto;
     margin: 20px;
@@ -1163,25 +1163,23 @@ background: #fff;
     padding-bottom: 50px;
   }
   
-  .why-choose-card {
-    width: 360px;
-    /* height: auto; */
-    background: white;
-    padding: 65px 30px;
-  }
+ 
+.why-choose-card {
+  width: 100%; 
+  max-width: 360px; 
+  background: white;
+  padding: 65px 30px;
+  margin: 0 auto; 
+  height: 300px;
+  position: relative; 
+}
   
   
-  /* .who-we-img-icon1, .img-icon2, .img-icon3, .img-icon4 {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain; 
-  }
-   */
   .img-icon-abuot {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-size: contain;
+    background-size: cover;
     width: 60px;
     height: 40px;
   }
@@ -1217,11 +1215,53 @@ background: #fff;
   }
   
   .card-container {
-    border: 1px solid #0C5ADB; /* Цвет обводки */
-    border-radius: 30px; /* Закругление углов */
-    padding: 30px 40px; /* Отступы внутри карточки */
+    border: 1px solid #0C5ADB; 
+    border-radius: 30px; 
+    padding: 30px 40px; 
   }
   
+@media (max-width: 1200px) {
+    .why-Choose {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .why-choose-card {
+        padding: 70px 25px;
+    }
+}
+
+/* Адаптивные стили для экранов шириной до 992 пикселей */
+@media (max-width: 992px) {
+    .why-Choose {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .why-choose-card {
+        padding: 80px 20px;
+    }
+    .img-icon-abuot {
+        width: 70px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+  .why-Choose {
+      padding-top: 60px;
+      padding-bottom: 20px;
+  }
+  .why-choose-card {
+      width: 100%;
+      max-width: none;
+      padding: 60px 15px;
+      margin-bottom: 20px;  
+  }
+  .img-icon-abuot {
+    width: 70px;
+    height: 45px;
+  }
+}
+
   
   @media (max-width: 767px) {
     .about-section,
@@ -1230,31 +1270,40 @@ background: #fff;
     }
   
     .mission-img, .vision-img {
-      max-width: 100px; /* Уменьшение размера изображений на мобильных устройствах */
+      max-width: 100px;
   }
   
     .why-choose-card {
-      width: 100%; /* Карточка занимает всю ширину колонки на планшетах */
+      width: 100%; 
     }
   
   
     .instant-block {
-      align-items: center; /* Центрируем контент на малых экранах */
+      align-items: center;
     }
   
 
     .why-choose-card h4 {
-      text-align: center; /* Центрируем заголовки */
+      text-align: center; 
     }
   
     .why-choose-card p {
-      text-align: center; /* Центрируем текст */
+      text-align: center;
     }
   
    
   }
   
-  
+  @media (max-width: 552px){
+    .why-choose-card {
+      padding:80px 35px;
+      height: auto;
+    }
+
+    .text-why-choose{
+      font-size:19px
+    }
+  }
   /**********************************************  About-us CSS End ***********************************/
 
   /********************************************** Printer-Driver CSS Start ***********************************/
