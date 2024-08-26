@@ -1445,6 +1445,10 @@ background: #fff;
     .blog-printer-img {
         max-width: 200px;
     }
+
+    .custom-p-description{
+      flex-direction: column;
+    }
 }
 
   /********************************************** Printer-Driver CSS End ***********************************/
